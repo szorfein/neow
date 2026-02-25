@@ -1,11 +1,56 @@
 -- https://github.com/folke/snacks.nvim/blob/main/docs
 local vim = vim
+local icon = require('utils.icon')
 
 return {
     'folke/snacks.nvim',
     lazy = false,
     priority = 1000,
     opts = {
+        -- dashboard
+        dashboard = {
+            preset = {
+                keys = {
+                    { icon = icon.get('FileNew'), key = 'n', desc = 'New file', action = ':ene | startinsert' },
+                    {
+                        icon = icon.get('SearchFile'),
+                        key = 'f',
+                        desc = 'Search and open a file',
+                        action = function()
+                            require('snacks').picker.files({
+                                hidden = vim.tbl_get((vim.uv or vim.loop).fs_stat('.git') or {}, 'type') == 'directory',
+                            })
+                        end,
+                    },
+                    {
+                        icon = icon.get('SessionLoad'),
+                        key = 's',
+                        desc = 'Restore Session',
+                        action = function()
+                            require('persistence').load()
+                        end,
+                    },
+                    {
+                        icon = icon.get('LazySync'),
+                        key = 'u',
+                        desc = 'Updates with Lazy',
+                        action = ':Lazy sync',
+                    },
+                    { icon = ' ', key = 'q', desc = 'Quit', action = ':qa' },
+                },
+                header = table.concat({
+                    '   ██   █  ████   ███   █    █ ╗   ',
+                    '    ███  █  █--   █   █  █  █ █    ',
+                    '    █  █ █  █     █  █   █ █ █     ',
+                    ' █  █  ███  ████  █ ███   █████  █  ',
+                }, '\n'),
+            },
+            sections = {
+                { section = 'header', padding = 5 },
+                { section = 'keys', gap = 0, padding = 4 },
+                { section = 'startup' },
+            },
+        },
         -- configure indent
         indent = {
             enabled = true,

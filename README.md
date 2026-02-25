@@ -12,6 +12,7 @@ Aesthetic, Modular <b>Neovim</b> configuration that focuses to be <b>intuitive</
 
 </div>
 
+![Vibe with Neow Dasboard](https://github.com/szorfein/unix-portfolio/raw/master/Vibe/Neow.jpg)
 ![Vibe with Neow](https://github.com/szorfein/unix-portfolio/raw/master/Vibe/full.jpg)
 
 ## ✨ Features
