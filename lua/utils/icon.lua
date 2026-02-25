@@ -7,6 +7,10 @@ function M.get(name)
         DiagnosticHint = '󰌵',
         DiagnosticInfo = '󰋼',
         DiagnosticWarn = '',
+        FileNew = '',
+        SessionLoad = '󰑓',
+        LazySync = '⏾',
+        SearchFile = '󰩉',
     }
     return i[name]
 end
