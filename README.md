@@ -1,29 +1,51 @@
-# Neow
+<h1 align=center>Neow</h1>
 
-Aesthetic Neovim configuration focus to be "intuitive" and fast.
+<div align=center>
 
-## Aesthetic
+![GitHub last commit](https://img.shields.io/github/last-commit/szorfein/neow?style=for-the-badge&labelColor=101418&color=9ccbfb)
+![GitHub Repo stars](https://img.shields.io/github/stars/szorfein/neow?style=for-the-badge&labelColor=101418&color=b9c8da)
+![GitHub repo size](https://img.shields.io/github/repo-size/szorfein/neow?style=for-the-badge&labelColor=101418&color=d3bfe6)
 
-- [Catppuccin](https://github.com/catppuccin/nvim)
-- [Gitsigns](https://github.com/lewis6991/gitsigns.nvim)
+<p style="padding: 8px 0 16px 0;">
+Aesthetic, Modular <b>Neovim</b> configuration that focuses to be <b>intuitive</b> and <b>fast</b>.
+</p>
 
-## Intuitive
+</div>
+
+![Vibe with Neow](https://github.com/szorfein/unix-portfolio/raw/master/Vibe/full.jpg)
+
+## ✨ Features
+
+### Aesthetic
+
+- All colors with [Catppuccin](https://github.com/catppuccin/nvim)
+- Syntax highlighting with [Treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
+- Git integration with [Gitsigns](https://github.com/lewis6991/gitsigns.nvim)
+
+### Intuitive
 
 - Auto remove trailing whitespace when save.
-- Format code on save with [conform](https://github.com/stevearc/conform.nvim).
+- Format code on save with [Conform](https://github.com/stevearc/conform.nvim).
+- Some Emacs keyboard shortcuts if you come from Emacs.
 
-## Install
+## 🧰 Installation
 
     git clone https://github.com/szorfein/neow ~/.config/nvim
 
-## Configuration
+## 🔧 Configuration
 
 Add a colorscheme (e.g mocha from [catppuccin.nvim](https://github.com/catppuccin/nvim) or create one):
 
     curl -o ~/.config/nvim/lua/colors.lua -sSL https://github.com/catppuccin/nvim/raw/refs/heads/main/lua/catppuccin/palettes/mocha.lua
 
-Add config for the top bar or a classic bottom:
+Add the Heirline configuration for the top bar or a classic bottom:
 
     curl -o ~/.config/nvim/lua/ui/heirline.lua -sSL https://github.com/szorfein/dotfiles/raw/refs/heads/main/swayfx-themes/vibe/.config/nvim/lua/ui/heirline.lua
 
 You can customize any of theses files to matches with your need.
+
+## 🚀 First start
+
+    nvim
+
+lazy.nvim will install all the stuff for Neow, just wait a bit.
