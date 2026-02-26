@@ -51,7 +51,7 @@ You can customize any of theses files to matches with your need.
 
 lazy.nvim will install all the stuff for Neow, just wait a bit.
 
-## ⭐Inspiration
+## ⭐ Inspiration
 
 - https://github.com/AstroNvim/AstroNvim
 - https://github.com/NvChad/NvChad

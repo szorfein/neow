@@ -39,10 +39,10 @@ return {
                     { icon = ' ', key = 'q', desc = 'Quit', action = ':qa' },
                 },
                 header = table.concat({
-                    '   ██   █  ████   ███   █    █ ╗   ',
-                    '    ███  █  █-▄   █   █  █  █ █    ',
-                    '    █  █ █  █     █  █   █ █ █     ',
-                    ' █  █  ███  ████  █ ███   █████  █  ',
+                    '     ██   █_████ 󱇫 ███  █    █ ╗    ',
+                    '      ███  █ █-▄   █   █_█  █ █     ',
+                    '   󰯊  █  █_█ █     █  █  █ █_█      ',
+                    '      █  ███  ███  █_███  ████   󰯊   ',
                 }, '\n'),
             },
             sections = {
@@ -92,13 +92,6 @@ return {
         },
     },
     keys = {
-        {
-            '<leader>,',
-            function()
-                require('snacks').picker.buffers()
-            end,
-            desc = 'Buffers',
-        },
         {
             '<c-f><c-f>',
             function()
