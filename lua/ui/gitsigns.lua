@@ -1,6 +1,6 @@
 return {
     'lewis6991/gitsigns.nvim',
-    --event = 'User FilePost',
+    event = 'User FilePost',
     opts = function()
         return {
             signs = {

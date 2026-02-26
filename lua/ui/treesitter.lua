@@ -4,7 +4,7 @@ return {
     version = false, -- last release is way too old and doesn't work on Windows
     build = ':TSUpdate',
     lazy = vim.fn.argc(-1) == 0, -- load treesitter early when opening a file from the cmdline
-    --event = { 'LazyFile', 'VeryLazy' },
+    event = 'VeryLazy',
     cmd = { 'TSUpdate', 'TSInstall', 'TSBufEnable', 'TSBufDisable', 'TSLog', 'TSUninstall' },
     opts_extend = { 'ensure_installed' },
     opts = {

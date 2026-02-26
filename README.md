@@ -50,3 +50,10 @@ You can customize any of theses files to matches with your need.
     nvim
 
 lazy.nvim will install all the stuff for Neow, just wait a bit.
+
+## ⭐Inspiration
+
+- https://github.com/AstroNvim/AstroNvim
+- https://github.com/NvChad/NvChad
+- https://github.com/brainfucksec/neovim-lua
+- https://github.com/xero/dotfiles/tree/main/neovim
