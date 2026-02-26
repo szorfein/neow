@@ -1,6 +1,4 @@
 return {
-    { 'junegunn/fzf' },
-    { 'junegunn/fzf.vim' },
     {
         'vimwiki/vimwiki',
         init = function()
@@ -15,6 +13,11 @@ return {
     },
     {
         'michal-h21/vim-zettel',
+        dependencies = {
+            'junegunn/fzf',
+            'junegunn/fzf.vim',
+            'vimwiki/vimwiki',
+        },
         init = function()
             -- for all options > :help vim-zettel
             vim.g.nv_search_paths = { '~/documents/notes' }

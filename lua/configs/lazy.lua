@@ -42,6 +42,7 @@ require('lazy').setup({
 
     -- https://github.com/NvChad/starter/blob/main/lua/configs/lazy.lua
     performance = {
+        reset_packpath = true,
         cache = {
             enabled = true,
         },
