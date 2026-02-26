@@ -40,14 +40,14 @@ return {
                 },
                 header = table.concat({
                     '   ██   █  ████   ███   █    █ ╗   ',
-                    '    ███  █  █--   █   █  █  █ █    ',
+                    '    ███  █  █-▄   █   █  █  █ █    ',
                     '    █  █ █  █     █  █   █ █ █     ',
                     ' █  █  ███  ████  █ ███   █████  █  ',
                 }, '\n'),
             },
             sections = {
-                { section = 'header', padding = 5 },
-                { section = 'keys', gap = 0, padding = 4 },
+                { section = 'header' },
+                { section = 'keys', gap = 0, padding = 1 },
                 { section = 'startup' },
             },
         },
