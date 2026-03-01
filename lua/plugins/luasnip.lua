@@ -2,31 +2,23 @@
 -- https://docs.astronvim.com/recipes/snippets/
 return {
     'L3MON4D3/LuaSnip',
-    lazy = true,
+    event = 'InsertEnter',
     dependencies = { { 'rafamadriz/friendly-snippets', lazy = true } },
-    version = 'v2.*', -- Replace <CurrentMajor> by the latest released major (first number of latest release)
-    opts = {
-        history = true,
-        updateevents = 'TextChanged,TextChangedI',
-    },
+    postinstall = 'make install_jsregexp',
     specs = {
         { 'saghen/blink.cmp', optional = true, opts = { snippets = { preset = 'luasnip' } } },
     },
-    config = function(_, opts)
-        require('luasnip').config.set_config(opts)
-        -- vscode format
-        require('luasnip.loaders.from_vscode').lazy_load({ exclude = vim.g.vscode_snippets_exclude or {} })
+    config = function()
+        local luasnip = require('luasnip')
+        luasnip.setup({
+            history = true,
+            delete_check_events = 'TextChanged',
+            region_check_events = 'CursorMoved',
+        })
+        -- add vscode exported completions
         require('luasnip.loaders.from_vscode').lazy_load({
             --paths = vim.g.vscode_snippets_path or ''
-            paths = { vim.fn.stdpath('config') .. '/snippets' },
+            --paths = { vim.fn.stdpath('config') .. '/snippets' },
         })
-
-        -- snipmate format
-        require('luasnip.loaders.from_snipmate').load()
-        require('luasnip.loaders.from_snipmate').lazy_load({ paths = vim.g.snipmate_snippets_path or '' })
-
-        -- lua format
-        require('luasnip.loaders.from_lua').load()
-        require('luasnip.loaders.from_lua').lazy_load({ paths = vim.g.lua_snippets_path or '' })
     end,
 }

@@ -22,12 +22,14 @@ Aesthetic, Modular <b>Neovim</b> configuration that focuses to be <b>intuitive</
 - All colors with [Catppuccin](https://github.com/catppuccin/nvim)
 - Syntax highlighting with [Treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - Git integration with [Gitsigns](https://github.com/lewis6991/gitsigns.nvim)
+- Statusline, Winbar, and Bufferline, Statuscolumn with [Heirline](https://github.com/rebelot/heirline.nvim)
 
 ### Intuitive
 
 - Auto remove trailing whitespace when save.
 - Format code on save with [Conform](https://github.com/stevearc/conform.nvim).
 - Some Emacs keyboard shortcuts if you come from Emacs.
+- On save, create the missed directories if you forgot to do it yourself.
 
 ## 🧰 Installation
 
@@ -49,7 +51,7 @@ You can customize any of theses files to matches with your need.
 
     nvim
 
-lazy.nvim will install all the stuff for Neow, just wait a bit.
+lazy.nvim will install all the stuff for Neow, just wait a few seconds.
 
 ## ⭐ Inspiration
 
