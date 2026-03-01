@@ -5,9 +5,18 @@ local map = vim.keymap.set
 -- Reload configuration without restart nvim
 map('n', '<leader>r', ':so %<CR>')
 
--- Change split orientation
-map('n', '<leader>tk', '<C-w>t<C-w>K') -- change vertical to horizontal
-map('n', '<leader>th', '<C-w>t<C-w>H') -- change horizontal to vertical
+-- Close active and all others, à=0, &=1, é=2, "=3 on french keyboard layout
+-- Todo: different files for different layout?
+map('n', '<C-x>à', '<C-w>q')
+map('n', '<C-x>&', '<C-w>o')
+map('n', '<C-x>é', '<C-w>s')
+map('n', '<C-x>"', '<C-w>v')
+
+-- Move around splits using Shift + {h,j,k,l}
+map('n', '<S-h>', '<C-w>h')
+map('n', '<S-j>', '<C-w>j')
+map('n', '<S-k>', '<C-w>k')
+map('n', '<S-l>', '<C-w>l')
 
 -- move start, end line
 map({ 'i', 'n' }, '<C-a>', '<Home>', { silent = true, desc = 'move begin line' })
