@@ -1,6 +1,6 @@
-# Nvie Keybinds
+# sVIe cheat sheet
 
-Nvie implements some Emacs keyboard shortcut, (not all).
+sVIe implements some Emacs keyboard shortcut, (not all).
 
 I keep the Vi logic like the navigation with h,j,l,m so for example this change all Emacs shortcuts using the arrow keys with the key for Vi, same with '$' character for 'end line' instead of 'e'.
 
@@ -10,7 +10,7 @@ Also running 'M-x' to run command has no interest here, Vi use ':' instead.
 
 - [Basic Movements](https://github.com/szorfein/nvie/blob/main/KEYBINDS.md#basics-movements)
 - [Windows Management](https://github.com/szorfein/nvie/blob/main/KEYBINDS.md#windows-management)
-- [Taking Notes](https://github.com/szorfein/neow/blob/mvie/KEYBINDS.md#notes-on-c-c)
+- [Taking Notes](https://github.com/szorfein/svie/blob/main/KEYBINDS.md#notes-on-c-c)
 
 ## Basic movements
 
@@ -26,7 +26,7 @@ Emacs use:
 | C-x  | C-c     | exits Emacs              |
 | C-\  |         | undo                     |
 
-Nvie use:
+sVIe use:
 
 | key | binding | purpose                  |
 | --- | ------- | ------------------------ |
@@ -34,7 +34,7 @@ Nvie use:
 | C-x | C-s     | save the buffer          |
 | C-x | b       | display all open buffers |
 | C-x | k       | kill (close) a buffer    |
-| C-x | C-c     | exits Nvie               |
+| C-x | C-c     | exits sVIe               |
 | u   |         | undo                     |
 
 ## Windows Management
@@ -49,7 +49,7 @@ Emacs use:
 | C-x | 3       | split window right        |
 | C-x | o       | switch active window      |
 
-Nvie use:
+sVIe use:
 
 | key | binding | purpose                   |
 | --- | ------- | ------------------------- |
@@ -61,7 +61,7 @@ Nvie use:
 
 ## Notes on [C-c]
 
-Nvie use [vim zettel](https://github.com/michal-h21/vim-zettel)
+sVIe use [vim zettel](https://github.com/michal-h21/vim-zettel)
 
 | key | binding | purpose    |
 | --- | ------- | ---------- |
