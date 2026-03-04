@@ -126,15 +126,6 @@ return {
     },
     keys = {
         {
-            '<c-f><c-f>',
-            function()
-                require('snacks').picker.files({
-                    hidden = vim.tbl_get((vim.uv or vim.loop).fs_stat('.git') or {}, 'type') == 'directory',
-                })
-            end,
-            desc = 'Find Files',
-        },
-        {
             '<leader>lD',
             function()
                 require('snacks').picker.diagnostics()
